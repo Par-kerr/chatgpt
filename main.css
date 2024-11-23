@@ -1,109 +1,49 @@
 @charset "UTF-8";
 /* CSS Document */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ol li {
+  background: #FFFFFF;
+  color:black;
+  margin: 8px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+ul {
+  list-style-type: none;
+  margin: 15;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-header {
-    background: #4CAF50;
-    color: #fff;
+li {
+  float: left;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 17px;
+  text-decoration: none;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
+li a:hover:not(.active) {
+  background-color: red;
 }
 
-.nav-links li {
-    position: relative;
+.active {
+  background-color: red;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+header{
+	
+	text-align: center
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    background: #333;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+body{
+	
+	background: url("Bluesky.jpeg")fixed top right; 
+	background-size: cover;
+	
+	}
 
-.dropdown li a {
-    padding: 0.5rem 1rem;
-    display: block;
-}
-
-.nav-links li:hover .dropdown {
-    display: block;
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    height: 4px;
-    width: 25px;
-    background: white;
-    margin: 2px 0;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin: 2rem 0;
-}
-
-.recipe-card {
-    background: #f9f9f9;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #ddd;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
